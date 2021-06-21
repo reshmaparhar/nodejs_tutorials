@@ -7,10 +7,11 @@ const server = http.createServer(function(req, res){
         res.end("welcome to about page");
     }
     
-    res.end(
-        `<h4>Oops !</h4>
+    res.end(`
+        <h4>Oops !</h4>
         <p>we can't find a page that you are looking for</p>
-        <a href ="/">back home </a>`
+        <a href ="/">back home </a>
+        `
     );
 })
 server.listen(5000);
